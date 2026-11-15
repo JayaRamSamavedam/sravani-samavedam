@@ -4,7 +4,7 @@ export interface Experience {
   location: string;
   startDate: string;
   endDate: string | null;
-  description: string;
+  bullets: string[];
 }
 
 export interface Education {
@@ -12,6 +12,7 @@ export interface Education {
   institution: string;
   graduation: string;
   score: string;
+  bullets?: string[];
   honors?: string;
 }
 
@@ -31,7 +32,7 @@ export interface ResumeData {
   headline: string;
   location: string;
   summary: string;
-  quantitativeHighlights: string[];
+  quantitativeHighlights: Array<{ label: string; value: string; detail: string }>;
   experience: Experience[];
   education: Education[];
   skills: SkillCategory[];
@@ -42,72 +43,145 @@ export const resumeData: ResumeData = {
   name: "Sravani Samavedam",
   headline: "Qualified Cost and Management Accountant (CMA)",
   location: "Vijayawada, Andhra Pradesh, India",
-  summary: "Qualified Cost and Management Accountant (CMA) with strong expertise in financial analysis, cost management, and budgeting. Solid foundation in accounting principles, business performance evaluation, and data-driven decision-making, backed by academic excellence and mentoring leadership.",
+  summary:
+    "Qualified Cost and Management Accountant (CMA) with strong expertise in financial analysis, cost management, and budgeting. Possess a solid foundation in accounting principles, business performance evaluation, and data-driven decision-making. Demonstrated analytical thinking, problem-solving ability, and leadership through academic excellence and mentoring initiatives.",
   quantitativeHighlights: [
-    "All 4 CMA Groups Cleared Consecutively",
-    "61.25% CMA Aggregate",
-    "97.5% Class XII MEC",
-    "600/600 Class X"
+    {
+      label: "ICMAI Continuous Sequence",
+      value: "All 4 Groups",
+      detail: "Cleared consecutively in continuous sequence (Dec 2025) · 61.25% Aggregate"
+    },
+    {
+      label: "Class XII (MEC) Board",
+      value: "97.5%",
+      detail: "Secured highest marks in the college in the CMA Foundation Examination"
+    },
+    {
+      label: "Krishna University B.Com",
+      value: "86%",
+      detail: "2x Recipient of the Best Student of the Academic Year Award"
+    },
+    {
+      label: "Class X Board",
+      value: "600/600",
+      detail: "100% Flawless Aggregate score across all subjects (March 2021)"
+    }
   ],
   experience: [
     {
       role: "Accounts & Costing Trainee",
       company: "MS Infra",
-      location: "Vijayawada, AP",
+      location: "Vijayawada, Andhra Pradesh",
       startDate: "July 2024",
       endDate: "Sept 2025",
-      description: "Assisted in preparing Monthly MIS reports (financial analysis, cost tracking, budget variance reporting); analyzed project-wise expenses to identify cost drivers; performed ledger scrutiny, bank reconciliations, and transaction verification for internal control compliance; supported audit processes via documentation and cross-functional coordination."
+      bullets: [
+        "Assisted in preparation of Monthly MIS reports including financial analysis, cost tracking, and budget variance reporting for management review.",
+        "Analyzed project-wise expenses to identify cost drivers and support performance evaluation.",
+        "Performed ledger scrutiny, bank reconciliations, and transaction verification to ensure financial accuracy and internal control compliance.",
+        "Supported audit processes through financial documentation, record maintenance, and cross-functional coordination."
+      ]
+    },
+    {
+      role: "Academic Mentor & Program Coordinator",
+      company: "Student Leadership Initiative",
+      location: "Vijayawada, Andhra Pradesh",
+      startDate: "2023",
+      endDate: "Present",
+      bullets: [
+        "Designed and delivered structured sessions simplifying complex financial and analytical concepts for students.",
+        "Developed presentation materials and performance tracking frameworks to enhance learning outcomes.",
+        "Provided guidance on strategic planning, goal setting, and structured problem-solving approaches.",
+        "Strengthened leadership, communication, and stakeholder coordination skills through mentoring initiatives."
+      ]
     }
   ],
   education: [
     {
       degree: "Cost and Management Accountant (CMA)",
-      institution: "The Institute of Cost Accountants of India (ICMAI), Vijayawada Chapter",
-      graduation: "Dec 2025",
-      score: "61.25%",
-      honors: "Cleared all four groups (Intermediate & Final) consecutively while pursuing B.Com—among the few in the batch to qualify in a continuous sequence."
+      institution: "The Institute of Cost Accountants of India – Vijayawada Chapter",
+      graduation: "December 2025",
+      score: "Aggregate: 61.25%",
+      bullets: [
+        "Completed all four groups (Intermediate & Final) consecutively while pursuing B.Com, demonstrating strong academic discipline and consistency.",
+        "Among the few candidates in the batch to qualify CMA in a continuous sequence."
+      ]
     },
     {
       degree: "Bachelor of Commerce (Accounting & Finance)",
       institution: "Krishna University",
       graduation: "Expected May 2026",
-      score: "",
-      honors: "Awarded Best Student of the Academic Year for two consecutive years."
+      score: "86%",
+      bullets: [
+        "Relevant Coursework: Financial Management, Corporate Accounting, Cost Accounting, Financial Accounting.",
+        "Recipient of the Best Student of the Academic Year award for two consecutive academic years."
+      ]
     },
     {
-      degree: "Class XII (MEC)",
+      degree: "Class XII – MEC",
       institution: "Annapurna Memorial Modern Jr. College",
       graduation: "March 2023",
       score: "97.5%",
-      honors: "Secured highest marks in the college in the CMA Foundation Examination."
+      bullets: [
+        "Secured highest marks in the college in the CMA Foundation Examination."
+      ]
     },
     {
       degree: "Class X",
       institution: "S.V.V.E.M High School",
       graduation: "March 2021",
-      score: "600/600"
+      score: "600/600",
+      bullets: [
+        "Perfect aggregate score across all core subjects."
+      ]
     }
   ],
   skills: [
     {
       name: "Financial Analysis & Reporting",
-      tools: ["MS Excel (Pivot Tables, VLOOKUP/XLOOKUP, data analysis functions)"]
+      tools: [
+        "Financial statement preparation",
+        "MIS reporting",
+        "Variance analysis",
+        "Budgeting support",
+        "Performance evaluation"
+      ]
     },
     {
       name: "Business & Cost Analysis",
-      tools: ["Tally ERP", "Expense tracking", "Profitability assessment"]
+      tools: [
+        "Cost analysis",
+        "Expense tracking",
+        "Profitability assessment",
+        "CVP analysis",
+        "Working capital evaluation"
+      ]
     },
     {
       name: "Data Analysis & Interpretation",
-      tools: ["Ratio analysis", "Cash flow analysis", "Capital budgeting techniques"]
+      tools: [
+        "Ratio analysis",
+        "Cash flow analysis",
+        "Capital budgeting techniques",
+        "Trend analysis",
+        "Financial modeling fundamentals"
+      ]
     },
     {
       name: "Process & Compliance Support",
-      tools: ["Internal controls", "Audit documentation", "GST basics"]
+      tools: [
+        "Internal controls",
+        "Audit documentation",
+        "Statutory record maintenance",
+        "Regulatory fundamentals (GST basics)"
+      ]
     },
     {
-      name: "Software Tools",
-      tools: ["MS PowerPoint"]
+      name: "Tools & Software",
+      tools: [
+        "MS Excel (Pivot Tables, VLOOKUP/XLOOKUP, Data Analysis)",
+        "Tally ERP",
+        "MS PowerPoint (Business Presentations)"
+      ]
     }
   ],
   contact: {

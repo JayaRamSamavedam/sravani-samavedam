@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#0B132B"/>
+  <rect x="24" y="24" width="1152" height="582" fill="none" stroke="#E2E8F0" stroke-width="1" stroke-opacity="0.2"/>
+  <rect x="40" y="40" width="1120" height="550" fill="#FAF9F6"/>
+  
+  <!-- Subtle Header Bar -->
+  <line x1="40" y1="120" x2="1160" y2="120" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="80" y="88" font-family="'JetBrains Mono', monospace" font-size="14" fill="#475569" letter-spacing="2">INSTITUTIONAL FINANCIAL DOSSIER • VIJAYAWADA, AP</text>
+  <rect x="980" y="65" width="100" height="30" rx="3" fill="#FEF3C7" stroke="#B45309" stroke-width="1"/>
+  <text x="1030" y="85" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600" fill="#B45309" text-anchor="middle" letter-spacing="1">CMA QUALIFIED</text>
+  
+  <!-- Display Title -->
+  <text x="80" y="220" font-family="'Instrument Serif', Georgia, serif" font-size="76" font-weight="500" fill="#0B132B" letter-spacing="-2">Sravani Samavedam</text>
+  <text x="80" y="280" font-family="'Plus Jakarta Sans', sans-serif" font-size="24" font-weight="500" fill="#B45309">Cost &amp; Management Accountant (ICMAI Dec 2025)</text>
+  <text x="80" y="330" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" fill="#475569" max-width="800">Financial Reporting • Cost Tracking • Variance Analysis • MIS Performance</text>
+  
+  <!-- Metrics Strip -->
+  <line x1="80" y1="380" x2="1120" y2="380" stroke="#E2E8F0" stroke-width="1"/>
+  <line x1="80" y1="510" x2="1120" y2="510" stroke="#E2E8F0" stroke-width="1"/>
+  
+  <text x="80" y="420" font-family="'JetBrains Mono', monospace" font-size="11" fill="#475569" letter-spacing="1">ICMAI QUALIFICATION</text>
+  <text x="80" y="475" font-family="'Instrument Serif', Georgia, serif" font-size="44" font-weight="600" fill="#0B132B">All 4 Groups</text>
+  <text x="80" y="495" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#475569">Cleared Consecutively</text>
+
+  <line x1="340" y1="390" x2="340" y2="500" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="370" y="420" font-family="'JetBrains Mono', monospace" font-size="11" fill="#475569" letter-spacing="1">CLASS XII (MEC)</text>
+  <text x="370" y="475" font-family="'Instrument Serif', Georgia, serif" font-size="44" font-weight="600" fill="#0B132B">97.5%</text>
+  <text x="370" y="495" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#475569">College Topper (CMA Foundation)</text>
+
+  <line x1="660" y1="390" x2="660" y2="500" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="690" y="420" font-family="'JetBrains Mono', monospace" font-size="11" fill="#475569" letter-spacing="1">KRISHNA UNIVERSITY</text>
+  <text x="690" y="475" font-family="'Instrument Serif', Georgia, serif" font-size="44" font-weight="600" fill="#0B132B">86%</text>
+  <text x="690" y="495" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#475569">2x Best Student of Academic Year</text>
+
+  <line x1="930" y1="390" x2="930" y2="500" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="960" y="420" font-family="'JetBrains Mono', monospace" font-size="11" fill="#475569" letter-spacing="1">CLASS X BOARD</text>
+  <text x="960" y="475" font-family="'Instrument Serif', Georgia, serif" font-size="44" font-weight="600" fill="#0B132B">600/600</text>
+  <text x="960" y="495" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#475569">Perfect 100% Score</text>
+
+  <!-- Footer Link -->
+  <text x="80" y="555" font-family="'JetBrains Mono', monospace" font-size="13" fill="#0B132B">sravani-samavedam.vercel.app</text>
+  <text x="1120" y="555" font-family="'JetBrains Mono', monospace" font-size="13" fill="#B45309" text-anchor="end">CMA_SravaniSamavedam_Resume.pdf ↗</text>
+</svg>

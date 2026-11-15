@@ -60,16 +60,16 @@ export function Credentials() {
           </div>
         </div>
 
-        {/* Cell 4: 2x Best Student */}
+        {/* Cell 4: 86% Krishna University 2x Best Student */}
         <div className="bento-cell">
           <span className="bento-label">Krishna University</span>
-          <div className="bento-metric tabular">2x</div>
+          <div className="bento-metric tabular">86%</div>
           <div>
             <strong style={{ display: 'block', fontSize: '14px', marginBottom: '4px', color: 'var(--ink)' }}>
-              Best Student Award
+              2x Best Student Award
             </strong>
             <p className="bento-sub">
-              Awarded Best Student of the Academic Year for two consecutive terms in B.Com (Accounting & Finance).
+              B.Com (Accounting & Finance). Awarded Best Student of the Academic Year for two consecutive terms.
             </p>
           </div>
         </div>

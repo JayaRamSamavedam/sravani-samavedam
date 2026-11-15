@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sravani-samavedam.vercel.app/sitemap.xml
